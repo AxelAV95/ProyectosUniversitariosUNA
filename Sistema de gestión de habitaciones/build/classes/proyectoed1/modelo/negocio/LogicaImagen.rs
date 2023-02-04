@@ -1,0 +1,1 @@
+proyecto1ed.modelo.negocio.LogicaImagen

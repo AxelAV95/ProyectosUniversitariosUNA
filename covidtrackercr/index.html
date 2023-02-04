@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>COVID19 Tracker CR</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <link href="assets/images/corona.png" rel="icon">
+  <link href="assets/images/corona.png" rel="apple-touch-icon">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
+ 
+    
+
+	<style type="text/css">
+		body{
+			background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+			
+			display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+		}
+  #particles-js {
+    width: 100%;
+    height: 100%;
+    
+    background-image: url('');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    position: absolute;
+    
+}
+footer{
+	margin-top: auto;
+}
+
+canvas {
+	
+    display: block;
+    vertical-align: bottom;
+}
+
+
+	</style>
+</head>
+
+<body>
+	<div id="particles-js"> </div>
+	<!-- TITULO CENTRADO -->
+	<h1 class="titulo-covid animate__animated animate__bounceIn">COVID19 TRACKER COSTA RICA</h1>
+	<center><h6 id="fecha" class="animate__animated animate__flipInX" style="color: white;"></h6></center>
+
+	<div class="container-fluid mx-auto">
+		<div class="row">
+			<div class="col">
+				<div class="mapa mx-auto">
+  				<img src="img/cr.png" style="animation: backInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */">
+  			</div>
+			</div>
+		</div>
+  		  
+  		<div class="contenedor-datos mx-auto animate__animated animate__backInUp" style="display: flex;flex-direction: column;">
+  			<div class="row">
+			    <div class="col">
+			      <div class="bloque">
+			      	<div class="card" >
+					  <div class="card-body">
+					    <h5 class="card-title">Casos nuevos <br> confirmados</h5>
+					   	<h1 id="nuevosconfirmados" class="nuevosconfirmados"></h1>
+					  </div>
+					</div>
+			      	
+			      	
+			      </div>
+			    </div>
+
+			    <div class="col">
+			      <div class="bloque">
+			      	<div class="card" >
+					  <div class="card-body">
+					    <h5 class="card-title">Total <br>confirmados</h5>
+					   	<h1 id="totalconfirmados"></h1>
+					  </div>
+					</div>
+			      	
+			      	
+			      </div>
+			    </div>
+			    <div class="col">
+			      <div class="bloque">
+			      	<div class="card"  >
+					  <div class="card-body">
+					    <h5 class="card-title">Nuevos <br> fallecidos</h5>
+					   	<h1 id="nuevosfallecidos"></h1>
+					  </div>
+					</div>
+			      	
+			      	
+			      </div>
+			    </div>
+
+			    
+
+	   
+ 		 	</div>
+
+ 		 	<div class="row">
+ 		 		
+
+			    <div class="col">
+			      <div class="bloque">
+			      	<div class="card" >
+					  <div class="card-body" >
+					    <h5 class="card-title">Total <br> fallecidos</h5>
+					    
+					   	<h1 id="totalfallecidos"></h1>
+					  </div>
+					</div>
+			      	
+			      	
+			      </div>
+			    </div>
+
+			    <div class="col">
+			      <div class="bloque">
+			      	<div class="card" >
+					  <div class="card-body">
+					    <h5 class="card-title">Nuevos recuperados</h5>
+					   	<h1 id="nuevosrecuperados"></h1>
+					  </div>
+					</div>
+			      	
+			      	
+			      </div>
+			    </div>
+			    <div class="col">
+			      <div class="bloque">
+			      	<div class="card" >
+					  <div class="card-body">
+					    <h5 class="card-title">Total recuperados</h5>
+					   	<h1 id="totalrecuperados"></h1>
+					  </div>
+					</div>
+			      	
+			      	
+			      </div>
+			     
+ 		 	</div>
+ 		 	
+
+			    
+	   
+ 		 	</div>
+  		</div>
+  		
+	</div>
+
+	<footer class="section_6">
+
+			<center>
+				<br>		
+				<label class="titulo-covid" style="font-size: 18px;"> © 2020 Copyright: Hecho por Axel Andrade</label>
+  
+			</center>
+         
+     </footer>
+	<!-- CONTENEDOR -->
+	
+		<!-- MAPA COSTA RICA SVG -->
+
+		<!-- FIN MAPA -->
+		<!-- CONTENEDOR CON DATOS -->
+			<!-- BLOQUE DE DATO -->
+				<!-- TITULO -->
+				<!-- CANTIDAD -->
+
+		
+			<!-- FIN BLOQUE DE DATO -->
+		<!-- FIN CONTENEDOR DATOS -->
+
+	<!-- FIN CONTENEDOR -->
+
+	<!-- FOOTER -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script type='text/javascript' src='./assets/js/particles.js'></script>
+  <script type='text/javascript' src='./assets/js/app.js'></script>
+	<script type="text/javascript">
+		$.get("https://api.covid19api.com/summary",
+			function(data){
+				//data['Countries'][40].Country;
+				//data['Countries'][40].NewConfirmed;
+				//data['Countries'][40].TotalConfirmed;
+				//data['Countries'][40].NewDeaths;
+				//data['Countries'][40].TotalDeaths;
+				//data['Countries'][40].TotalConfirmed;
+				//data['Countries'][40].NewRecovered;
+				//data['Countries'][40].TotalRecovered;
+				//data['Countries'][40].Date
+				document.getElementById("fecha").innerHTML = "+" + data['Countries'][40].Date;
+				document.getElementById("nuevosconfirmados").innerHTML = "+" + data['Countries'][40].NewConfirmed;
+				document.getElementById("totalconfirmados").innerHTML =  data['Countries'][40].TotalConfirmed;
+				document.getElementById("nuevosfallecidos").innerHTML = "+" +  data['Countries'][40].NewDeaths;
+				document.getElementById("totalfallecidos").innerHTML =  data['Countries'][40].TotalDeaths;
+				document.getElementById("nuevosrecuperados").innerHTML = "+" +  data['Countries'][40].NewRecovered;
+				document.getElementById("totalrecuperados").innerHTML = data['Countries'][40].TotalRecovered;
+
+			}
+			)
+	</script>
+</body>
+</html>

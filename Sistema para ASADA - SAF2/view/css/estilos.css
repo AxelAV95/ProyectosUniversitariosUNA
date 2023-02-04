@@ -1,0 +1,376 @@
+*{
+
+    margin: 0 ;
+
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 19px;
+    
+}
+body{
+  zoom:75%;
+  background: #2980b9;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2c3e50, #2980b9);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2c3e50, #2980b9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  width: 100%;
+
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    
+
+
+
+}
+.contenido{
+  zoom:86%;
+  line-height: 1.4em;
+  width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+header{
+    width: 100%;
+    height: 60px;
+ background: #000428;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+border:  1px;
+border-bottom-style: solid;
+
+border-color: white;
+
+
+}
+
+
+header span{
+    font-size: 30px;
+    padding: 10px;
+    color: white;
+    transition: all 300ms;
+    cursor: pointer;
+    position: relative;
+    top: 16px;
+    left: 10px;
+}
+
+header span:hover{
+    background: rgba(0,0,0,0.4);
+    border-radius: 10px;
+}
+
+.content-menu{
+    width: 300px;
+    background: #161616;
+    transition: all 300ms;
+   /* border-right-style: solid;
+    border-right-color: white;
+    border-right-width: 1px;*/
+}
+
+.content-menu2{
+    margin-left: -388px;
+    padding-right: 380px;
+
+}
+
+.content-menu li{
+    list-style: none;
+    text-align: center;
+    padding: 20px 100px;
+    color: white;
+    transition: all 300ms;
+    cursor: pointer;
+}
+
+.content-menu li:hover{
+    transform: translateY(10px);
+    background: rgba(0,0,0,0.5);
+}
+
+.content-menu li span{
+    font-size: 24px;
+}
+
+.content-menu li:hover{
+    transform: translateY(10px);
+    background: #2193b0;  /* fallback for old browsers */
+background: #2193b0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: #161616;
+    
+}
+
+
+.content-menu li h4{
+   font-weight: 100;
+    transform: translateY(15px);
+    
+}
+
+
+
+
+article{
+    padding: 20px;
+}
+
+article h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+article p{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+footer{
+      width: 100%;
+      height: 60px;
+    background: #000428;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+border:  1px;
+border-bottom-style: solid;
+
+border-color: white;
+
+}
+
+
+.contenido{
+        padding: 50px 100px 100px 100px;    
+        opacity: 0.9;
+}
+
+
+/*BOTONES*/
+.pure-button {
+    /* Structure */
+     margin-bottom: 5px;
+     margin-right: auto;
+     margin-left: auto;
+    display: inline-block;
+    zoom: 1;
+    line-height: normal;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    box-sizing: border-box;
+}
+
+/* Firefox: Get rid of the inner focus border */
+.pure-button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+/* Inherit .pure-g styles */
+.pure-button-group {
+    letter-spacing: -0.31em; /* Webkit: collapse white-space between units */
+    *letter-spacing: normal; /* reset IE < 8 */
+    *word-spacing: -0.43em; /* IE < 8: collapse white-space between units */
+    text-rendering: optimizespeed; /* Webkit: fixes text-rendering: optimizeLegibility */
+}
+
+.opera-only :-o-prefocus,
+.pure-button-group {
+    word-spacing: -0.43em;
+}
+
+.pure-button-group .pure-button {
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
+}
+
+/*csslint outline-none:false*/
+
+.pure-button {
+    font-family: inherit;
+    font-size: 100%;
+   
+    padding: 0.5em 1em;
+    color: #444; /* rgba not supported (IE 8) */
+    color: rgba(0, 0, 0, 0.80); /* rgba supported */
+    border: 1px solid #999;  /*IE 6/7/8*/
+    border: none rgba(0, 0, 0, 0);  /*IE9 + everything else*/
+    background-color: #E6E6E6;
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+.pure-button-hover,
+.pure-button:hover,
+.pure-button:focus {
+    /* csslint ignore:start */
+    filter: alpha(opacity=90);
+    /* csslint ignore:end */
+    background-image: -webkit-linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+    background-image: linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+}
+.pure-button:focus {
+    outline: 0;
+}
+.pure-button-active,
+.pure-button:active {
+    box-shadow: 0 0 0 1px rgba(0,0,0, 0.15) inset, 0 0 6px rgba(0,0,0, 0.20) inset;
+    border-color: #0009;
+}
+
+.pure-button[disabled],
+.pure-button-disabled,
+.pure-button-disabled:hover,
+.pure-button-disabled:focus,
+.pure-button-disabled:active {
+    border: none;
+    background-image: none;
+    /* csslint ignore:start */
+    filter: alpha(opacity=40);
+    /* csslint ignore:end */
+    opacity: 0.40;
+    cursor: not-allowed;
+    box-shadow: none;
+    pointer-events: none;
+}
+
+.pure-button-hidden {
+    display: none;
+}
+
+.pure-button-primary,
+.pure-button-selected,
+a.pure-button-primary,
+a.pure-button-selected {
+    background-color: rgba(6, 69, 95, 0.726);
+    color: #fff;
+}
+
+
+/*------------------------------------------------------------*/
+.bEliminar {
+    background-image: url("imagenes/eliminar.png");
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    border: none;
+    padding: 2px;
+    width: 30px;
+    height: 30px;
+    transition: all 0.5s;
+    cursor: pointer;
+   }
+   
+
+   .bMedidor {
+    background-image: url("imagenes/medidor2.png");
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    border: none;
+    padding: 2px;
+    width: 30px;
+    height: 30px;
+    transition: all 0.5s;
+    cursor: pointer;
+   }
+   
+   .bMedidor:hover{
+    width: 45px;
+    height: 45px;
+   }
+
+   .bEliminar:hover{
+    width: 45px;
+    height: 45px;
+   }
+   /*------------------------------------------------------------*/
+   .bVer {
+    background-image: url("imagenes/ver.png");
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    border: none;
+    padding: 2px;
+    width: 30px;
+    height: 30px;
+    transition: all 0.5s;
+    cursor: pointer;
+   }
+   
+   .bVer:hover{
+    width: 45px;
+    height: 45px;
+   }
+   /*------------------------------------------------------------*/
+   .bActualizar {
+    background-image: url("imagenes/actualizar.png");
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    border: none;
+    padding: 2px;
+    width: 30px;
+    height: 30px;
+    transition: all 0.5s;
+    cursor: pointer;
+   }
+   
+   .bActualizar:hover{
+    width: 45px;
+    height: 45px;
+   }
+   /*------------------------------------------------------------*/
+   .bEmail {
+    background-image: url("imagenes/email.png");
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    border: none;
+    padding: 2px;
+    width: 30px;
+    height: 30px;
+    transition: all 0.5s;
+    cursor: pointer;
+   }
+   
+   .bEmail:hover{
+    width: 45px;
+    height: 45px;
+   }
+
+   
+
+
+
+  @media (min-width: 354px) and (max-width: 636px) {
+  
+  .content-menu{
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
+

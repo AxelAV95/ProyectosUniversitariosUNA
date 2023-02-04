@@ -1,0 +1,36 @@
+
+	table { 
+            margin-left:20px;
+            margin-right: 20px;
+            
+  width: 90%; 
+  border-collapse: collapse; 
+}
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+  background: #eee; 
+}
+th { 
+  background: #333; 
+  color: white; 
+  font-weight: bold; 
+}
+td, th { 
+  padding: 6px; 
+  border: 1px solid #ccc; 
+  text-align: left; 
+}
+
+.tabla-paquetes{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.tabla-persona{
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+.tabla-destinos{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}

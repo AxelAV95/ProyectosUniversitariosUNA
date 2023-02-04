@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Practica sílabas</title>             
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
+	<meta charset="utf-8">
+</head>
+<body>
+
+		<!-- <nav class="navbar navbar-dark bg-dark">
+  <span class="navbar-brand mb-0 h1">한글	</span>
+</nav> -->
+
+	<div id="contenedor-cards">
+		
+		<div id="columna">
+			<div class="card" >
+			  <div class="card-body">
+			  	<center>
+			   		<h1 class="card-title" id="1">바</h1>
+			    	<a onclick="play('1');" ><img id="play-img" src="img/1.png"></a>
+			   
+				</center>
+			  </div>
+			</div>
+			<div class="card" >
+			  <div class="card-body">
+			    <center>
+			   		<h1 class="card-title" id="2">파</h1>
+			    	<a onclick="play('2');" ><img id="play-img2" src="img/1.png"></a>
+			   
+				</center>
+			  </div>
+			</div>
+			<div class="card" >
+			  <div class="card-body">
+			    <center>
+			   		<h1 class="card-title" id="3">빠</h1>
+			    	<a onclick="play('3');" ><img id="play-img3" src="img/1.png"></a>
+			   
+				</center>
+			  </div>
+			</div>
+		</div>
+
+		<div id="columna">
+			<div class="card" >
+			  <div class="card-body">
+			    <center>
+			   		<h1 class="card-title" id="4">다</h1>
+			    	<a onclick="play('4');" ><img id="play-img4" src="img/1.png"></a>
+			   
+				</center>
+			  </div>
+			</div>
+			<div class="card" >
+			  <div class="card-body">
+			    <center>
+			   		<h1 class="card-title" id="5">타</h1>
+			    	<a onclick="play('5');" ><img id="play-img5" src="img/1.png"></a>
+			   
+				</center>
+			  </div>
+			</div>
+			<div class="card" >
+			  <div class="card-body">
+			    <center>
+			   		<h1 class="card-title" id="6">따</h1>
+			    	<a onclick="play('6');" ><img id="play-img6" src="img/1.png"></a>
+			   
+				</center>
+			  </div>
+			</div>
+		</div>
+
+		<div id="columna">
+			<div class="card" >
+			  <div class="card-body">
+			    <center>
+			   		<h1 class="card-title" id="7">사</h1>
+			    	<a onclick="play('7');" ><img id="play-img7" src="img/1.png"></a>
+			   
+				</center>
+			  </div>
+			</div>
+			<div class="card" id="med" >
+			  <div class="card-body">
+			    
+			  </div>
+			</div>
+			<div class="card" >
+			  <div class="card-body">
+			    <center>
+			   		<h1 class="card-title" id="8">싸</h1>
+			    	<a onclick="play('8');" ><img id="play-img8" src="img/1.png"></a>
+			   
+				</center>
+			  </div>
+			</div>
+		</div>
+
+		<div id="columna">
+			<div class="card" >
+			  <div class="card-body">
+			    <center>
+			   		<h1 class="card-title" id="9">가	</h1>
+			    	<a onclick="play('9');" ><img id="play-img9" src="img/1.png"></a>
+			   
+				</center>
+			  </div>
+			</div>
+			<div class="card" >
+			  <div class="card-body">
+			    <center>
+			   		<h1 class="card-title" id="10">카	</h1>
+			    	<a onclick="play('10');" ><img id="play-img10" src="img/1.png"></a>
+			   
+				</center>
+			  </div>
+			</div>
+			<div class="card" >
+			  <div class="card-body">
+			    <center>
+			   		<h1 class="card-title" id="11">까	</h1>
+			    	<a onclick="play('11');" ><img id="play-img11" src="img/1.png"></a>
+			   
+				</center>
+			  </div>
+			</div>
+		</div>
+
+		<div id="columna">
+			<div class="card" >
+			  <div class="card-body">
+			    <center>
+			   		<h1 class="card-title" id="12">자</h1>
+			    	<a onclick="play('12');" ><img id="play-img12" src="img/1.png"></a>
+			   
+				</center>
+			  </div>
+			</div>
+			<div class="card" >
+			  <div class="card-body">
+			    <center>
+			   		<h1 class="card-title" id="13">차	</h1>
+			    	<a onclick="play('13');" ><img id="play-img13" src="img/1.png"></a>
+			   
+				</center>
+			  </div>
+			</div>
+			<div class="card" >
+			  <div class="card-body">
+			    <center>
+			   		<h1 class="card-title" id="14">짜	</h1>
+			    	<a onclick="play('14');" ><img id="play-img14" src="img/1.png"></a>
+			   
+				</center>
+			  </div>
+			</div>
+		</div>
+
+	</div>
+
+	<div id="box-m" style="padding-bottom: 90%;" ></div>
+
+	<section class="section_6 bg-dark">
+
+			<center>
+				
+				<label> © 2020 Copyright: Made by Axel A.</label>
+  <!--   <a href="/"> A.A.A</a> -->
+
+			</center>
+         <!-- <div class="d-sm-flex flex-row text-white">
+             <div class="footer">
+                 <label for="Prod">Products</label>
+                 <ul>
+                     <li>Our Work</li>
+                     <li>Club</li>
+                     <li>News</li>
+                     <li>Annowncement</li>
+                 </ul>
+             </div>
+             <div class="footer">
+                 <label for="info">Information</label>
+                 <ul>
+                     <li>Pricing</li>
+                     <li>Terms</li>
+                     <li>Affiliates</li>
+                     <li>Blog</li>
+                 </ul>
+             </div>
+             <div class="footer">
+                 <label for="sup">Support</label>
+                 <ul>
+                     <li>Documentation</li>
+                     <li>FQAs</li>
+                     <li>Frorums</li>
+                     <li>Contact</li>
+                 </ul>
+             </div>
+         </div> -->
+     </section>
+
+   
+	
+
+	 <!-- <footer class="page-footer">
+
+
+  <div class="footer-copyright text-center py-3"> <label> © 2020 Copyright:	</label>
+    <a href="/"> A.A.A</a>
+  </div>
+  
+
+</footer>  -->
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+ <script>
+     var audio1 = new Audio('audio/1.mp4');
+     var audio2 = new Audio('audio/2.mp4');
+     var audio3 = new Audio('audio/3.mp4');
+     var audio4 = new Audio('audio/4.mp4');
+     var audio5 = new Audio('audio/5.mp4');
+     var audio6 = new Audio('audio/6.mp4');
+     var audio7 = new Audio('audio/7.mp4');
+     var audio8 = new Audio('audio/8.mp4');
+     var audio9 = new Audio('audio/9.mp4');
+     var audio10 = new Audio('audio/10.mp4');
+     var audio11 = new Audio('audio/11.mp4');
+     var audio12 = new Audio('audio/12.mp4');
+     var audio13 = new Audio('audio/13.mp4');
+     var audio14 = new Audio('audio/14.mp4');
+  
+     function play(letter) {
+         if(letter == '1') {
+         	if(audio1.paused){
+         		animateCSS('play-img', 'pulse');
+         		animateCSS('1', 'tada');
+				audio1.play();	
+				document.getElementById("play-img").src = "img/2.png";
+				
+         	}else{
+         		audio1.pause();
+         		document.getElementById("play-img").src = "img/1.png";
+  
+         	}
+         }
+
+         if(letter == '2') {
+         	if(audio2.paused){
+         		animateCSS('play-img2', 'pulse');
+         		animateCSS('2', 'tada');
+				audio2.play();	
+				document.getElementById("play-img2").src = "img/2.png";
+				
+         	}else{
+         		audio2.pause();
+         		document.getElementById("play-img2").src = "img/1.png";
+  
+         	}
+         } 
+
+         if(letter == '3') {
+         	if(audio3.paused){
+         		animateCSS('play-img3', 'pulse');
+         		animateCSS('3', 'tada');
+				audio3.play();	
+				document.getElementById("play-img3").src = "img/2.png";
+				
+         	}else{
+         		audio3.pause();
+         		document.getElementById("play-img3").src = "img/1.png";
+  
+         	}
+         } 
+
+         if(letter == '4') {
+         	if(audio4.paused){
+         		animateCSS('play-img4', 'pulse');
+         		animateCSS('4', 'tada');
+				audio4.play();	
+				document.getElementById("play-img4").src = "img/2.png";
+				
+         	}else{
+         		audio4.pause();
+         		document.getElementById("play-img4").src = "img/1.png";
+  
+         	}
+         } 
+
+         if(letter == '5') {
+         	if(audio5.paused){
+         		animateCSS('play-img5', 'pulse');
+         		animateCSS('5', 'tada');
+				audio5.play();	
+				document.getElementById("play-img5").src = "img/2.png";
+				
+         	}else{
+         		audio5.pause();
+         		document.getElementById("play-img4").src = "img/1.png";
+  
+         	}
+         } 
+
+         if(letter == '6') {
+         	if(audio6.paused){
+         		animateCSS('play-img6', 'pulse');
+         		animateCSS('6', 'tada');
+				audio6.play();	
+				document.getElementById("play-img6").src = "img/2.png";
+				
+         	}else{
+         		audio6.pause();
+         		document.getElementById("play-img6").src = "img/1.png";
+  
+         	}
+         } 
+
+         if(letter == '7') {
+         	if(audio7.paused){
+         		animateCSS('play-img7', 'pulse');
+         		animateCSS('7', 'tada');
+				audio7.play();	
+				document.getElementById("play-img7").src = "img/2.png";
+				
+         	}else{
+         		audio7.pause();
+         		document.getElementById("play-img7").src = "img/1.png";
+  
+         	}
+         } 
+
+         if(letter == '8') {
+         	if(audio8.paused){
+         		animateCSS('play-img8', 'pulse');
+         		animateCSS('8', 'tada');
+				audio8.play();	
+				document.getElementById("play-img8").src = "img/2.png";
+				
+         	}else{
+         		audio8.pause();
+         		document.getElementById("play-img8").src = "img/1.png";
+  
+         	}
+         } 
+
+         if(letter == '9') {
+         	if(audio9.paused){
+         		animateCSS('play-img', 'pulse');
+         		animateCSS('9', 'tada');
+				audio9.play();	
+				document.getElementById("play-img9").src = "img/2.png";
+				
+         	}else{
+         		audio9.pause();
+         		document.getElementById("play-img9").src = "img/1.png";
+  
+         	}
+         } 
+
+         if(letter == '10') {
+         	if(audio10.paused){
+         		animateCSS('play-img10', 'pulse');
+         		animateCSS('10', 'tada');
+				audio10.play();	
+				document.getElementById("play-img10").src = "img/2.png";
+				
+         	}else{
+         		audio10.pause();
+         		document.getElementById("play-img10").src = "img/1.png";
+  
+         	}
+         } 
+
+         if(letter == '11') {
+         	if(audio11.paused){
+         		animateCSS('play-img11', 'pulse');
+         		animateCSS('11', 'tada');
+				audio11.play();	
+				document.getElementById("play-img11").src = "img/2.png";
+				
+         	}else{
+         		audio11.pause();
+         		document.getElementById("play-img11").src = "img/1.png";
+  
+         	}
+         }
+
+         if(letter == '12') {
+         	if(audio12.paused){
+         		animateCSS('play-img12', 'pulse');
+         		animateCSS('12', 'tada');
+				audio12.play();	
+				document.getElementById("play-img12").src = "img/2.png";
+				
+         	}else{
+         		audio12.pause();
+         		document.getElementById("play-img12").src = "img/1.png";
+  
+         	}
+         }  
+
+         if(letter == '13') {
+         	if(audio13.paused){
+         		animateCSS('play-img13', 'pulse');
+         		animateCSS('13', 'tada');
+				audio13.play();	
+				document.getElementById("play-img13").src = "img/2.png";
+				
+         	}else{
+         		audio13.pause();
+         		document.getElementById("play-img13").src = "img/1.png";
+  
+         	}
+         } 
+
+         if(letter == '14') {
+         	if(audio14.paused){
+         		animateCSS('play-img14', 'pulse');
+         		animateCSS('14', 'tada');
+				audio14.play();	
+				document.getElementById("play-img14").src = "img/2.png";
+				
+         	}else{
+         		audio14.pause();
+         		document.getElementById("play-img14").src = "img/1.png";
+  
+         	}
+         } 
+
+     }
+
+     const animateCSS = (element, animation, prefix = 'animate__') =>
+  // We create a Promise and return it
+  new Promise((resolve, reject) => {
+    const animationName = `${prefix}${animation}`;
+    const node = document.getElementById(element);
+
+    node.classList.add(`${prefix}animated`, animationName);
+
+    // When the animation ends, we clean the classes and resolve the Promise
+    function handleAnimationEnd() {
+      node.classList.remove(`${prefix}animated`, animationName);
+      node.removeEventListener('animationend', handleAnimationEnd);
+
+      resolve('Animation ended');
+    }
+
+    node.addEventListener('animationend', handleAnimationEnd);
+  });
+
+	audio1.onended = function() {
+    	document.getElementById("play-img").src = "img/1.png";
+	};
+
+	audio2.onended = function() {
+    	document.getElementById("play-img2").src = "img/1.png";
+	};
+
+	audio3.onended = function() {
+    	document.getElementById("play-img3").src = "img/1.png";
+	};
+
+	audio4.onended = function() {
+    	document.getElementById("play-img4").src = "img/1.png";
+	};
+
+	audio5.onended = function() {
+    	document.getElementById("play-img5").src = "img/1.png";
+	};
+
+	audio6.onended = function() {
+    	document.getElementById("play-img6").src = "img/1.png";
+	};
+
+	audio7.onended = function() {
+    	document.getElementById("play-img7").src = "img/1.png";
+	};
+	audio8.onended = function() {
+    	document.getElementById("play-img8").src = "img/1.png";
+	};
+
+	audio9.onended = function() {
+    	document.getElementById("play-img9").src = "img/1.png";
+	};
+
+	audio10.onended = function() {
+    	document.getElementById("play-img10").src = "img/1.png";
+	};
+
+	audio11.onended = function() {
+    	document.getElementById("play-img11").src = "img/1.png";
+	};
+
+	audio12.onended = function() {
+    	document.getElementById("play-img12").src = "img/1.png";
+	};
+
+	audio13.onended = function() {
+    	document.getElementById("play-img13").src = "img/1.png";
+	};
+
+	audio14.onended = function() {
+    	document.getElementById("play-img14").src = "img/1.png";
+	};
+ </script>
+
+
+</body>
+</html>

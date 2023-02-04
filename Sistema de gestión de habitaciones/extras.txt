@@ -1,0 +1,14 @@
+1000, Estacionamiento gratis
+1001, Wifi gratis
+1002, Piscina
+1003,Almuerzo
+1004,Agua caliente
+1005,Aire acondicionado
+1006,Cable
+1007,Snack
+1008,Bebidas
+1009,Televisión
+1010,Cena
+1011,Desayuno
+1012,Parqueo
+1013,Limpieza

@@ -1,0 +1,34 @@
+<mediciones>
+	
+	<medicion>
+		<medidorid>4447</medidorid>
+		<metrosconsumidos>146</metrosconsumidos>
+		<mes>Febrero</mes>
+		<anio>2019</anio>
+	</medicion>
+
+	<medicion>
+		<medidorid>4448</medidorid>
+		<metrosconsumidos>238</metrosconsumidos>
+		<mes>Febrero</mes>
+		<anio>2019</anio>
+	</medicion>
+
+	<medicion>
+		<medidorid>4451</medidorid>
+		<metrosconsumidos>575</metrosconsumidos>
+		<mes>Febrero</mes>
+		<anio>2019</anio>
+	</medicion>
+
+	<medicion>
+		<medidorid>4452</medidorid>
+		<metrosconsumidos>327</metrosconsumidos>
+		<mes>Febrero</mes>
+		<anio>2019</anio>
+	</medicion>
+
+
+	
+</mediciones>
+	

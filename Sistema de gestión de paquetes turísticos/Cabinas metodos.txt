@@ -1,0 +1,47 @@
+Escoger habitacion:
+1) Extra grande(8 personas)
+2) Familiar(4 personas)
+3) Pareja
+
+En caso de 1:
+-Cuantas personas va ingresar(maximo 8){
+has 
+	si a entonces return total;
+	si b -> return total;
+	.
+	.
+	.
+	si cantidad >= 8 && cantidad <= 99
+	cout << "No se puede agregar mas de 3 personas!\nVuelva ingresar la cantidad" << endl;
+						repetir = 1;
+
+mientras repetir == 1
+}
+
+En caso de 2:
+-Cuantas personas va ingresar(maximo 4){
+has
+
+	si a -> return total;
+	si b -> return total;
+	.
+	.
+	.
+	si cantidad >=4 && cantidad <= 99
+	no se puede agregar, vuelva ingresar
+	repetir = 1;
+
+mientras repetir ==1
+}
+
+En caso de 3:
+-Cuantas personas va ingresar(maximo 2)
+has
+
+	si a -> return total;
+	si b -> return total;
+	si cantidad >= 2 && cantidad <= 99
+	cout << "No se puede agregar mas de 3 personas!\nVuelva ingresar la cantidad" << endl;
+	repetir = 1;
+mientras repetir == 1
+-solicitar precio

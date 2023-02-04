@@ -1,0 +1,14 @@
+Letra: A
+Palabras: AXIOMA Repeticiones: 3
+Palabras: AXEL Repeticiones: 0
+Palabras: ARBOL Repeticiones: 0
+Letra: C
+Palabras: CARRO Repeticiones: 0
+Palabras: CAMION Repeticiones: 0
+Letra: I
+Palabras: INGENIERIA Repeticiones: 0
+Palabras: INTERNACIONAL Repeticiones: 0
+Letra: P
+Palabras: PROGRAMACION Repeticiones: 0
+Palabras: PROGRESO Repeticiones: 0
+

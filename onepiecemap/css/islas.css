@@ -1,0 +1,124 @@
+.data-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+.data-title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* flex-grow: 2;
+    border: 3px double black; */
+    margin-bottom: 1px;
+}
+
+.data-title h4 {
+    text-align: center;
+    font-size: 15px;
+
+}
+
+.data-title img {
+    width: 17rem;
+    margin: 3px;
+
+
+}
+
+.data-img {
+    transform: rotate(-1deg);
+    -webkit-box-shadow: 3px 6px 5px 0px rgba(0, 0, 0, 0.51);
+    -moz-box-shadow: 3px 6px 5px 0px rgba(0, 0, 0, 0.51);
+    box-shadow: 3px 6px 5px 0px rgba(0, 0, 0, 0.51);
+    margin-top: 1rem;
+    position: relative;
+    border: 1px solid black;
+
+
+
+}
+
+.data-img .data-img-pin {
+    position: absolute;
+    margin-top: 0.7rem;
+    top: 1;
+    animation: heartBeat;
+    animation-duration: 6100ms;
+    width: 2rem;
+}
+
+.data-img h3 {
+    position: absolute;
+    right: 50%;
+    top: 0;
+}
+
+.data-img img {
+
+    width: 100%;
+
+
+
+
+}
+
+.data-desc {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    background-color: #c9f3e2;
+    border-radius: 2rem;
+    border: 2px solid #d9c865;
+    overflow-y: auto;
+   height:  7rem;
+
+}
+
+.data-desc::-webkit-scrollbar {
+    width: 1em;
+  }
+   
+  .data-desc::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  .data-desc::-webkit-scrollbar-thumb {
+    background-image: url(../img/thumb.png);
+    background-size: cover;
+    background-position-x: center;
+    
+    outline: 1px solid slategrey;
+  }
+
+.data-desc p {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 14px;
+    
+}
+
+#container-personajes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+
+}
+
+
+#container-personajes div img {
+    border-radius: 50%;
+    width: 9rem;
+    margin: 1rem;
+    border: 3px solid black;
+    box-shadow: 3px 6px 5px 0px rgba(0, 0, 0, 0.51);
+
+}
+
+#pers-title{
+    font-family: 'Satisfy', cursive;
+}

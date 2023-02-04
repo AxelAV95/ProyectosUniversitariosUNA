@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Saira:wght@100;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+.container-fluid{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+
+.titulo-covid{
+	font-family: 'Bebas Neue', cursive;
+	font-size: 40px;
+	color: white;
+	text-shadow: 2px 2px 2px black;
+}
+
+h1,h5,h6{
+	text-align: center;
+	 text-transform: uppercase; 
+	font-family: 'Saira', serif;
+
+	font-weight: bold;
+}
+
+.col{
+	margin-top: 6%;
+}
+
+@media (max-width: 767px) {
+ 
+ .container-fluid{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+ }
+
+ .mapa{
+ 	display: flex;
+ 	justify-content: center;
+ 	
+ }
+ .mapa img{
+ 	width: 50%;
+ 	
+ } 
+
+
+
+
+/* .contenedor-datos {
+ 	display: flex;
+ 	
+ 	flex-direction: column;
+ }
+*/
+
+ .card{
+ 	width: auto;
+ 	box-shadow: 2px 2px black;
+ 	
+ }
+
+ h1,h6{
+	text-align: center;
+	 text-transform: uppercase;
+	 font-size: 14px; 
+}
+
+h5{
+	font-size: 9px;
+}
+ 
+ }

@@ -1,0 +1,6 @@
+0 admin_convention franqui_convention 0
+1 pedrogomez pedrogomez34 2
+NULL joseperez 8-932-323 3 100000
+2 prueba prueba4253344 2
+NULL prueba prueba 3 100000
+3 jorge jorge4254656 2

@@ -1,0 +1,16 @@
+GUÍA PARA CREAR MODALES Y SU ESTILOS
+
+INSERTAR
+- Incluir en el archivo php principal la referencia al modal:
+<?php include 'nombremodal.php ?> (Ver estructura clientemodal.php para referencia)
+- Agregar las referencias a css y estilos en el archivo php principal:
+ * <link rel="stylesheet" type="text/css" href="css/modal.css">
+ * <link rel="stylesheet" type="text/css" href="css/botones-form.css">
+
+-Agregar dependencias de archivos javascript:
+ *<script type="text/javascript" src="js/modal-script-nombre.js"></script>
+(Ver estructura de modal-script-cliente.js para referencia)
+ *<script src="js/nombreAjax.js"></script>
+
+Comentarios: Para el caso de los modales ver y el boton cancelar, se sugiere añadir ambos métodos en
+el archivo php principal y no en los javascript mencionados anteriormente.

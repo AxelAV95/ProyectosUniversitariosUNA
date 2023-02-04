@@ -1,0 +1,92 @@
+
+.nav-item-text{
+	font-family: 'Francois One', sans-serif;
+}
+
+
+.producto-item{
+	font-family: 'Titan One', cursive;
+	word-wrap: break-word;
+	text-align: center;
+}
+.producto-item-boton:hover{
+	animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
+  	animation-duration: 2s; /* don't forget to set a duration! */
+}
+.card{
+	width: 15rem;
+    min-height: 200px;
+}
+.producto-item-img{
+	width: 10rem;
+    min-height: 10rem;
+    max-height: auto;
+}
+
+.producto-item-precio{
+	font-family: 'Francois One', sans-serif;
+	
+	color:black;
+}
+
+.producto-item-boton{
+	font-family: 'Francois One', sans-serif;
+}
+.paginacion-item{
+	font-family: 'Francois One', sans-serif;
+}
+
+.tabla-productos thead th{
+	font-family: 'Francois One', sans-serif;
+}
+
+.tabla-productos tbody tr td{
+	font-family: 'Francois One', sans-serif;
+}
+
+.counter {
+    width: 150px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.counter input {
+    width: 35px;
+    border: 0;
+    line-height: 30px;
+    font-size: 13px;
+    text-align: center;
+    background: #0052cc;
+    color: #fff;
+    appearance: none;
+    outline: 0;
+    border-radius: 50%;
+    font-family: 'Francois One', sans-serif;
+}
+.counter span {
+    display: block;
+    font-size: 25px;
+    padding: 0 10px;
+    cursor: pointer;
+    color: #b91e1e;
+    user-select: none;
+}
+
+.col .swiper{
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-wrapper{
+       
+       width: 10rem;
+    }
+    .swiper-slide{
+        margin-top: -1.1rem;
+        margin-bottom: 0.5rem;
+    }
+    .swiper-slide:hover{
+    
+        animation: pulse;
+        animation-duration: 2s;
+    }

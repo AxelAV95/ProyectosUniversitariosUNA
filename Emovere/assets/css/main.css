@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap');
+		
+		body,html{
+			font-family: 'Poppins', sans-serif;
+			box-sizing: border-box;
+
+		}
+
+		.glide{
+			width: 90%;
+			background-color: white;
+			border-radius: 2rem;
+			margin: 0 auto;
+			padding-right: 2rem 5rem 2rem 5rem;
+			
+		}
+
+		#container-estados{
+			
+			display: flex;
+			margin-top:7%;
+			justify-content: center;
+			align-items: center;
+			
+			
+		}
+
+		
+
+
+		#angry-container-botones, #sad-container-botones{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			
+		}
+
+		#angry-container-botones-emotion,#sad-container-botones-emotion{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		button{
+			width: 10rem;
+			background-color: white;
+			padding: 0.6rem;
+			text-align: center;
+			border-radius: 1rem;
+			margin: 0.5rem;
+			font-family: 'Poppins', sans-serif;
+			font-weight: bold;
+
+			-webkit-box-shadow: 0px 1px 38px -22px rgba(0,0,0,0.75);
+			-moz-box-shadow: 0px 1px 38px -22px rgba(0,0,0,0.75);
+			box-shadow: 0px 1px 38px -22px rgba(0,0,0,0.75);
+		}
+
+		button:hover{
+			
+			outline: solid 2px white;
+			outline-offset: -2px;
+			background-color: black;
+			color:white;
+			animation: pulse;
+			animation-duration: 2s; /* don't forget to set a duration! */
+		}
+		img{
+			width: 50%;
+		}
+
+		li{
+			padding: 6px;
+			cursor: pointer;
+
+		}
+		li:hover{
+			opacity:0.8;
+			animation: pulse; /* referring directly to the animation's @keyframe declaration */
+			animation-duration: 2s; /* don't forget to set a duration! */
+		}
+
+		body {
+			display: flex;
+			min-height: 90vh;
+			flex-direction: column;
+			background: #003973;  /* fallback for old browsers */
+			background: -webkit-linear-gradient(-45deg, #E5E5BE, #003973);  /* Chrome 10-25, Safari 5.1-6 */
+			background: linear-gradient(-45deg, #E5E5BE, #003973); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+			background-size: 400% 400%;
+			
+			animation: animate 8.5s ease-in-out infinite;
+		}
+
+		footer{
+			position: fixed;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			background-color: black;
+			color: white;
+			text-align: center;
+			font-family: 'Poppins', sans-serif;
+			font-weight: bold;
+		}
+
+		.close-img{
+			width: 20px;
+		}
+
+		.close-img:hover{
+			opacity: 0.7;
+		}
+
+
+
+/* CSS */
+#boton-cerrar {
+	appearance: button;
+	backface-visibility: hidden;
+	background-color: #405cf5;
+	border-radius: 6px;
+	border-width: 0;
+	box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+	box-sizing: border-box;
+	color: #fff;
+	cursor: pointer;
+	font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+	font-size: 100%;
+	height: 44px;
+	line-height: 1.15;
+	margin: 12px 0 0;
+	outline: none;
+	overflow: hidden;
+	padding: 0 25px;
+	position: relative;
+	text-align: center;
+	text-transform: none;
+	transform: translateZ(0);
+	transition: all .2s,box-shadow .08s ease-in;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	width: 100%;
+}
+
+.button-9:disabled {
+	cursor: default;
+}
+
+.button-9:focus {
+	box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+
+		h1{
+			color: #fff;
+			background: rgba(255,255,255,.2);
+			padding: 20px;
+			font-size: 40px;
+			border-radius: 10px;
+			text-align: center;
+		}
+
+		@keyframes animate{
+			0%{
+				background-position: 0 50%;
+			}
+			50%{
+				background-position: 100% 50%;
+			}
+			100%{
+				background-position: 0 50%;
+			}
+		}
+
+		@media screen and (max-width: 576px)  {
+			body{
+				background-color: purple;
+			}
+			h1{
+				font-size: 20px;
+			}
+			img{
+				width: 100%;
+				padding:2rem;
+			}
+
+			
+
+		}
+
+		@media screen and (min-width: 576px) {
+			body{
+				background-color: blue;
+			}
+		}
+
+		@media screen and (min-width: 768px) {
+			body{
+				background-color: yellow;
+			}
+		}
+
+
+		@media screen and (min-width: 992px) {
+			body{
+				background-color: green;
+			}
+		}
+
+		@media screen and (min-width: 1200px) {
+			body{
+				background-color: red;
+			}
+		}
+
+
+
+		

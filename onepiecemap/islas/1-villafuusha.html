@@ -1,0 +1,133 @@
+
+
+<div class="data-container">
+        <div class="data-title animate__animated animate__pulse animate__infinite animate__slow">
+                <img src="img/ribbon2.png" alt="">
+                <h4 style="position: absolute; bottom: 16px; top: 19; color:white; "> Villa Fuusha</h4>
+
+        </div>
+
+        <div class="data-img animate__animated animate__flip " style="animation-duration: 3500ms;">
+                <div class="data-img-pin  " >
+                        <img src="img/pin.png" alt="">
+                </div>
+                <img src="img/villafusha.png" class="" alt="">
+
+        </div>
+
+        <div class="data-desc" >
+                <p>Es un aldea situada en el la Isla de Dawn y parte del Reino de Goa. Es el pueblo natal de Monkey D.
+                        Luffy, además es la aldea en donde comienza la historia de One Piece. </p>
+        </div>
+
+        <div>
+                <div id="modal-personajes" class="target-click">
+
+                        <div
+                                style="background-color: white;  border-radius: 50%; width: 3rem; height: 3rem; margin-top: 0.5rem;  border: 2px dotted black">
+                                <div id="personajes-tool" class="target " style="display: flex; justify-content: center; ">
+                                        <img src="img/sdp.jpg" style="margin-top: 22%;"
+                                                class="animate__animated animate__pulse animate__infinite" width="40"
+                                                height="20" alt="">
+                                </div>
+                        </div>
+
+
+                </div>
+
+
+        </div>
+
+
+
+</div>
+
+
+
+<div id="character-data-vf" style="display: none;">
+        <div id="container-personajes" class="animate__animated animate__jackInTheBox">
+
+                <div ><img id="personaje-1-vf" class="target " src="img/personajes/1.png" alt=""></div>
+                <div><img  id="personaje-2-vf" class="target " src="img/personajes/2.png" alt=""></div>
+                <div ><img id="personaje-3-vf" class="target " src="img/personajes/3.png" alt=""></div>
+                <div ><img id="personaje-4-vf" class="target " src="img/personajes/4.png" alt=""></div>
+                <div ><img id="personaje-5-vf" class="target " src="img/personajes/5.png" alt=""></div>
+                <div ><img id="personaje-6-vf" class="target " src="img/personajes/6.png" alt=""></div>
+                <div ><img id="personaje-7-vf" class="target " src="img/personajes/7.png" alt=""></div>
+
+        </div>
+</div>
+
+<script>
+         $( ".data-desc" ).scroll();
+</script>
+
+<script>
+        new jBox('Modal', {
+                attach: '#modal-personajes',
+                width: 500,
+                height: 450,
+                title: "<center><h3 id='pers-title' , cursive;'>Personajes que aparecen en esta isla</h3></center",
+                content:
+                        $('#character-data-vf')
+        });
+
+        new jBox('Tooltip', {
+                attach: '#personajes-tool',
+                content: 'PERSONAJES',
+                position: {
+
+                        y: 'bottom'
+                },
+        });
+
+        new jBox('Tooltip', {
+                attach: '#personaje-1-vf',
+                content: '<center>Woop Slap</center><center>ウープ・スラップ</center>',
+                position: {
+                        y: 'bottom'
+                },
+        });
+        new jBox('Tooltip', {
+                attach: '#personaje-2-vf',
+                content: '<center>Makino</center><center>マキノ</center>',
+                position: {
+                        y: 'bottom'
+                },
+        });
+        new jBox('Tooltip', {
+                attach: '#personaje-3-vf',
+                content: '<center>Monkey D. Luffy</center><center>モンキー・Ｄ・ルフィ</center>',
+                position: {
+                        y: 'bottom'
+                },
+        });
+        new jBox('Tooltip', {
+                attach: '#personaje-4-vf',
+                content: '<center>Monkey D. Garp</center><center>モンキー・D・ガープ</center>',
+                position: {
+                        y: 'bottom'
+                },
+        });
+        new jBox('Tooltip', {
+                attach: '#personaje-5-vf',
+                content: '<center>Akagami no Shanks</center>赤髪のシャンクス<center></center>',
+                position: {
+                        y: 'bottom'
+                },
+        });
+        new jBox('Tooltip', {
+                attach: '#personaje-6-vf',
+                content: '<center>Benn Beckman</center><center>ベン·ベックマン</center>',
+                position: {
+                        y: 'bottom'
+                },
+        });
+        new jBox('Tooltip', {
+                attach: '#personaje-7-vf',
+                content: '<center>Lucky Roux</center><center>ラッキー・ルウ</center>',
+                position: {
+                        y: 'bottom'
+                },
+        });
+</script>

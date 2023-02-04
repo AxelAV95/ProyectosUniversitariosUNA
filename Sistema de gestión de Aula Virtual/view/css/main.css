@@ -1,0 +1,87 @@
+#modalAgregarEstudiante input, #cursociclo, #cursoanio,#estudiantescurso{
+	border: 1px solid #D3D3D3;
+}
+
+.select2-selection{
+	width: 28rem;
+}
+
+.jGrowl .changeCount {
+	background: #0275d8;
+}
+
+#cursos_filter input{
+	border: 1px solid #D3D3D3;
+}
+
+#modalAgregarCurso input, #carreraid, #cursovigencia{
+	border: 1px solid #D3D3D3;
+}
+
+.eliminar{
+	display: none;
+}
+
+.eliminar:hover{
+	display: block;
+}
+
+
+
+
+#modalEditarCurso .modal-dialog, #modalCalificarCurso .modal-dialog{
+	-webkit-transform: translate(0,-50%);
+	-o-transform: translate(0,-50%);
+	transform: translate(0,-50%);
+	top: 50%;
+	margin: 0 auto;
+	width: 300px;   
+}
+
+#modalEditarCurso .modal-content, #modalCalificarCurso .modal-content{
+	width: 100%;
+}
+
+#modalEditarCurso .modal-content input, #modalCalificarCurso .modal-content input , #total{
+	width: 3rem;
+}
+
+#estudiantes_filter input{
+			border: 1px solid gray;
+		}
+
+#cursos_filter input{
+			border: 1px solid #D3D3D3;
+		}
+
+		.dz-default {
+			height: 200px;
+			border: 2px dashed gray;
+		}
+		.dz-button{
+			margin-top: 1rem;
+		}
+
+		#asignacionesp_filter input{
+			border: 1px solid gray;
+		}
+
+		#asignacionesestudiantes_filter input{
+			border: 1px solid #D3D3D3;
+		}
+
+		#asignacionest_filter input{
+			border: 1px solid #D3D3D3;	
+		}
+
+		.dz-default {
+			height: 200px;
+			border: 2px dashed gray;
+		}
+		.dz-button{
+			margin-top: 1rem;
+		}
+
+		#asignacionesp_filter input{
+			border: 1px solid gray;
+		}

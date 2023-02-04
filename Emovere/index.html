@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Required Core stylesheet -->
+	<link rel="stylesheet" href="assets/glide/dist/css/glide.core.min.css">
+
+	<!-- Optional Theme stylesheet -->
+	<link rel="stylesheet" href="assets/glide/dist/css/glide.theme.min.css">
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<link rel="stylesheet" href="assets/js/modaal/css/modaal.min.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<title>Emovere</title>
+
+
+</head>
+<body>
+	<h1>Selecciona un estado de ánimo</h1>
+	<div id="container-estados" >
+		<div class="glide" >
+			<div class="glide__track" data-glide-el="track" >
+				<ul class="glide__slides"  >
+					<li class="glide__slide">
+						<img class="angry-mood" src="assets/img/1.svg" alt="">
+					</li>
+					<li class="glide__slide">
+						<img class="sad-mood" src="assets/img/2.svg" alt="">
+					</li>
+					<li class="glide__slide">
+						<img class="chaos-mood" src="assets/img/3.svg" alt="">
+					</li>
+					<li class="glide__slide">
+						<img class="neutral-mood" src="assets/img/4.svg" alt="">
+					</li>
+					<li class="glide__slide">
+						<img class="satisfied-mood" src="assets/img/5.svg" alt="">
+					</li>
+					<li class="glide__slide">
+						<img class="happy-mood" src="assets/img/6.svg" alt="">
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div id="angry-container" style="display:none;">
+
+		<div id="angry-container-botones">
+
+			<div id="angry-container-botones-emotion">
+				<button class="irritado">Irritado</button>
+				<button class="enojo">Enojado</button>
+			</div>
+			
+			<div id="angry-container-botones-emotion">
+				<button class="furioso">Furioso</button>
+				<button class="ira">Iracundo</button>
+			</div>
+
+			<div id="angry-container-botones-emotion">
+				<button class="estres">Estresado</button>
+				<button class="frustracion">Frustrado</button>
+			</div id="angry-container-botones-emotion">
+			
+			<div id="angry-container-botones-emotion">
+				<button class="disgusto">Disgustado</button>
+				<button class="resentido">Resentido</button>
+			</div>
+			<div id="angry-container-botones-emotion">
+				<button class="tension">Tenso</button>
+			</div>
+			
+			
+			
+		</div>
+		<br>
+		<div style="display: flex; justify-content: center;">
+
+			<button id="boton-cerrar" onclick="$('.angry-mood').modaal('close');">Cerrar</button>
+			
+
+
+		</div>
+		
+	</div>
+
+	<div id="sad-container" style="display:none;">
+
+		<div id="angry-container-botones">
+
+			<div id="angry-container-botones-emotion">
+				<button class="miserable">Miserable</button>
+				<button class="solo">Solo</button>
+			</div>
+			
+			<div id="angry-container-botones-emotion">
+				<button class="decepcionado">Decepcionado</button>
+				<button class="desesperanzado">Desesperanzado</button>
+			</div>
+
+			<div id="angry-container-botones-emotion">
+				<button class="triste">Triste</button>
+				<button class="melancolico">Melancólico</button>
+			</div id="angry-container-botones-emotion">
+			
+			<div id="angry-container-botones-emotion">
+				<button class="dolido">Dolido</button>
+				<button class="arrepentido">Arrepentido</button>
+			</div>
+			<div id="angry-container-botones-emotion">
+				<button class="nostalgico">Nostálgico</button>
+			</div>
+			
+			
+			
+		</div>
+		<br>
+		<div style="display: flex; justify-content: center;">
+
+			<button id="boton-cerrar" onclick="$('.sad-mood').modaal('close');">Cerrar</button>
+			
+
+
+		</div>
+		
+	</div>
+
+	<div id="chaos-container" style="display:none;">
+
+		<div id="angry-container-botones">
+
+			<div id="angry-container-botones-emotion">
+				<button class="ansioso">Ansioso</button>
+				<button class="culpable">Culpable</button>
+			</div>
+			
+			<div id="angry-container-botones-emotion">
+				<button class="nervioso">Nervioso</button>
+				<button class="preocupado">Preocupado</button>
+			</div>
+
+			<div id="angry-container-botones-emotion">
+				<button class="cansado">Cansado</button>
+				<button class="abrumado">Abrumado</button>
+			</div id="angry-container-botones-emotion">
+			
+			<div id="angry-container-botones-emotion">
+				<button class="desesperado">Desesperado</button>
+				<button class="asustado">Asustado</button>
+			</div>
+			<div id="angry-container-botones-emotion">
+				<button class="agotado">Agotado</button>
+				<button class="confundido">Confundido</button>
+			</div>
+			<div id="angry-container-botones-emotion">
+				<button class="indeciso">Indeciso</button>
+				<button class="avergonzado">Avergonzado</button>
+			</div>
+			
+			
+			
+		</div>
+		<br>
+		<div style="display: flex; justify-content: center;">
+
+			<button id="boton-cerrar" onclick="$('.chaos-mood').modaal('close');">Cerrar</button>
+			
+			
+
+		</div>
+		
+	</div>
+
+	<div id="neutral-container" style="display:none;">
+
+		<div id="angry-container-botones">
+
+			<div id="angry-container-botones-emotion">
+				<button class="ambivalente">Ambivalente</button>
+				<button class="apatico">Apático</button>
+			</div>
+			
+			<div id="angry-container-botones-emotion">
+				<button class="comodo">Cómodo</button>
+				<button class="indiferente">Indiferente</button>
+			</div>
+
+			<div id="angry-container-botones-emotion">
+				<button class="calmado">Calmado</button>
+				<button class="adormecido">Adormecido</button>
+			</div id="angry-container-botones-emotion">
+			
+			<div id="angry-container-botones-emotion">
+				<button class="tranquilo">Tranquilo</button>
+				<button class="aburrido">Aburrido</button>
+			</div>
+		</div>
+		<br>
+		<div style="display: flex; justify-content: center;">
+
+			<button id="boton-cerrar" onclick="$('.neutral-mood').modaal('close');">Cerrar</button>
+			
+			
+
+		</div>
+		
+	</div>
+
+	<div id="satisfied-container" style="display:none;">
+
+		<div id="angry-container-botones">
+
+			<div id="angry-container-botones-emotion">
+				<button class="sereno">Sereno</button>
+				<button class="agradecido">Agradecido</button>
+			</div>
+			
+			<div id="angry-container-botones-emotion">
+				<button class="inspirado">Inspirado</button>
+				<button class="enpaz">En paz</button>
+			</div>
+
+			<div id="angry-container-botones-emotion">
+				<button class="satisfecho">Satisfecho</button>
+				<button class="agusto">A gusto</button>
+			</div id="angry-container-botones-emotion">
+			
+			<div id="angry-container-botones-emotion">
+				<button class="encantado">Encantado</button>
+				<button class="fascinado">Fascinado</button>
+			</div>
+			<div id="angry-container-botones-emotion">
+				<button class="esperanzado">Esperanzado</button>
+				
+			</div>
+		</div>
+		<br>
+		<div style="display: flex; justify-content: center;">
+
+			<button id="boton-cerrar" onclick="$('.satisfied-mood').modaal('close');">Cerrar</button>
+			
+			
+
+		</div>
+		
+	</div>
+
+	<div id="happy-container" style="display:none;">
+
+		<div id="angry-container-botones">
+
+			<div id="angry-container-botones-emotion">
+				<button class="emocionado">Emocionado</button>
+				<button class="entusiasmado">Entusiasmado</button>
+			</div>
+			
+			<div id="angry-container-botones-emotion">
+				<button class="feliz">Feliz</button>
+				<button class="optimista">Optimista</button>
+			</div>
+
+			<div id="angry-container-botones-emotion">
+				<button class="orgulloso">Orgulloso</button>
+				<button class="amoroso">Amoroso</button>
+			</div id="angry-container-botones-emotion">
+			
+			<div id="angry-container-botones-emotion">
+				<button class="bendecido">Bendecido</button>
+				<button class="extasiado">Extasiado</button>
+			</div>
+			<div id="angry-container-botones-emotion">
+				<button class="alegre">Alegre</button>
+				
+			</div>
+		</div>
+		<br>
+		<div style="display: flex; justify-content: center;">
+
+			<button id="boton-cerrar" onclick="$('.happy-mood').modaal('close');">Cerrar</button>
+			
+			
+
+		</div>
+		
+	</div>
+
+	<footer>Axel Andrade Villalobos - <span id="year"></span></footer>
+
+	<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+	<script src="assets/js/modaal/js/modaal.js"></script>
+	<script src="assets/glide/dist/glide.min.js"></script>
+	<script src="assets/js/angry-mood.js"></script>
+	<script src="assets/js/sad-mood.js"></script>
+	<script src="assets/js/chaotic-mood.js"></script>
+	<script src="assets/js/neutral-mood.js"></script>
+	<script src="assets/js/satisfied-mood.js"></script>
+	<script src="assets/js/happy-mood.js"></script>
+
+
+
+	<script>
+
+		$("#year").html(new Date().getFullYear());
+		
+
+	</script>
+
+	<script>
+
+		var glide = new Glide('.glide', {
+			type: 'carousel',
+			perView: 6,
+			focusAt: 'center',
+			startAt: 2,
+			breakpoints: {
+				
+				576: {
+					perView: 1
+				}
+			}
+		})
+
+		glide.mount()
+	</script>
+</body>
+</html>

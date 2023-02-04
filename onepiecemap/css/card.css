@@ -1,0 +1,23 @@
+.card {
+    
+    transition: 0.3s;
+    width: 100%;
+    border-radius: 5px;
+    z-index: -9999;
+  }     
+
+  
+  /* img {
+      width: 210px;
+      height: 140px;
+             border-radius: 5px 5px 0 0;
+  } */
+  
+  .card-container {
+    padding: 2px 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    flex: 1;
+  }

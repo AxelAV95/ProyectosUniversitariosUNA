@@ -1,0 +1,7 @@
+-MostrarCantidadDeHotelesRegistrados
+leer documentos de hoteles y mostrarlos
+-MostrarCabinasRegistradas
+leer documentos de cabinas y mostrarlos
+-Mostrar la cantidad de todos los hoteles o cabinas registrados
+-Identificar la cantidad de reservas realizadas en su totalidad y su monto
+-Identificar la cantidad de reservas realizadas en un mes en especifico y su monto

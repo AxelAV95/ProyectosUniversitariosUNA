@@ -1,0 +1,126 @@
+
+
+<div class="data-container">
+   <div class="data-title animate__animated animate__pulse animate__infinite animate__slow">
+           <img src="img/ribbon2.png" alt="">
+           <h4 style="position: absolute; bottom: 16px; top: 19; color:white; "> Shells Town</h4>
+
+   </div>
+
+   <div class="data-img animate__animated animate__flip " style="animation-duration: 3500ms;">
+           <div class="data-img-pin  " >
+                   <img src="img/pin.png" alt="">
+           </div>
+           <img src="img/shellstown.png" class="" alt="">
+
+   </div>
+
+   <div class="data-desc" >
+           <p>La ciudad se localiza en la isla Yotsuba en el East Blue. Corresponde a la 153ra División de la Marine. </p>
+   </div>
+
+   <div>
+           <div id="modal-personajes" class="target-click">
+
+                   <div
+                           style="background-color: white;  border-radius: 50%; width: 3rem; height: 3rem; margin-top: 0.5rem;  border: 2px dotted black">
+                           <div id="personajes-tool" class="target " style="display: flex; justify-content: center; ">
+                                   <img src="img/sdp.jpg" style="margin-top: 22%;"
+                                           class="animate__animated animate__pulse animate__infinite" width="40"
+                                           height="20" alt="">
+                           </div>
+                   </div>
+
+
+           </div>
+
+
+   </div>
+
+
+
+</div>
+
+
+
+<div id="character-data-iy" style="display: none;">
+   <div id="container-personajes" class="animate__animated animate__jackInTheBox">
+
+           <div ><img id="personaje-1-iy" class="target " src="img/personajes/9.png" alt=""></div>
+           <div><img  id="personaje-2-iy" class="target " src="img/personajes/10.png" alt=""></div>
+           <div ><img id="personaje-3-iy" class="target " src="img/personajes/3.png" alt=""></div>
+           <div ><img id="personaje-4-iy" class="target " src="img/personajes/11.png" alt=""></div>
+           <div ><img id="personaje-5-iy" class="target " src="img/personajes/12.png" alt=""></div>
+           <div ><img id="personaje-6-iy" class="target " src="img/personajes/13.png" alt=""></div>
+           
+
+   </div>
+</div>
+
+<script>
+    $( ".data-desc" ).scroll();
+</script>
+
+<script>
+   new jBox('Modal', {
+           attach: '#modal-personajes',
+           width: 500,
+           height: 450,
+           title: "<center><h3 id='pers-title' , cursive;'>Personajes que aparecen en esta isla</h3></center",
+           content:
+                   $('#character-data-iy')
+   });
+
+   new jBox('Tooltip', {
+           attach: '#personajes-tool',
+           content: 'PERSONAJES',
+           position: {
+
+                   y: 'bottom'
+           },
+   });
+
+   new jBox('Tooltip', {
+           attach: '#personaje-1-iy',
+           content: '<center>Coby</center><center>コビー</center>',
+           position: {
+                   y: 'bottom'
+           },
+   });
+   new jBox('Tooltip', {
+           attach: '#personaje-2-iy',
+           content: '<center>Rika</center>リカ<center></center>',
+           position: {
+                   y: 'bottom'
+           },
+   });
+   new jBox('Tooltip', {
+           attach: '#personaje-3-iy',
+           content: '<center>Monkey D. Luffy</center><center>モンキー・D・ルフィ</center>',
+           position: {
+                   y: 'bottom'
+           },
+   });
+   new jBox('Tooltip', {
+           attach: '#personaje-4-iy',
+           content: '<center>Morgan</center><center>モー ガン</center>',
+           position: {
+                   y: 'bottom'
+           },
+   });
+   new jBox('Tooltip', {
+           attach: '#personaje-5-iy',
+           content: '<center>Helmeppo</center><center>ヘルメッポ</center>',
+           position: {
+                   y: 'bottom'
+           },
+   });
+   new jBox('Tooltip', {
+           attach: '#personaje-6-iy',
+           content: '<center>Roronoa Zoro</center><center>ロロノア・ ゾロ</center>',
+           position: {
+                   y: 'bottom'
+           },
+   });
+   
+</script>

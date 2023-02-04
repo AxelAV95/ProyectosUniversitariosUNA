@@ -1,0 +1,132 @@
+
+
+<div class="data-container">
+   <div class="data-title animate__animated animate__pulse animate__infinite animate__slow">
+           <img src="img/ribbon2.png" alt="">
+           <h4 style="position: absolute; bottom: 16px; top: 19; color:white; "> Villa Syrup</h4>
+
+   </div>
+
+   <div class="data-img animate__animated animate__flip " style="animation-duration: 3500ms;">
+           <div class="data-img-pin  " >
+                   <img src="img/pin.png" alt="">
+           </div>
+           <img src="img/syrup.png" class="" alt="">
+
+   </div>
+
+   <div class="data-desc" >
+           <p>Es el lugar de nacimiento de Usopp, localizado en el archipiélago de las Islas Gecko. Es un lugar muy pacífico y tranquilo. </p>
+   </div>
+
+   <div>
+           <div id="modal-personajes" class="target-click">
+
+                   <div
+                           style="background-color: white;  border-radius: 50%; width: 3rem; height: 3rem; margin-top: 0.5rem;  border: 2px dotted black">
+                           <div id="personajes-tool" class="target " style="display: flex; justify-content: center; ">
+                                   <img src="img/sdp.jpg" style="margin-top: 22%;"
+                                           class="animate__animated animate__pulse animate__infinite" width="40"
+                                           height="20" alt="">
+                           </div>
+                   </div>
+
+
+           </div>
+
+
+   </div>
+
+
+
+</div>
+
+
+
+<div id="character-data-sy" style="display: none;">
+   <div id="container-personajes" class="animate__animated animate__jackInTheBox">
+
+           <div ><img id="personaje-1-sy" class="target " src="img/personajes/21.png" alt=""></div>
+           <div><img  id="personaje-2-sy" class="target " src="img/personajes/23.png" alt=""></div>
+           <div ><img id="personaje-3-sy" class="target " src="img/personajes/24.png" alt=""></div>
+           <div ><img id="personaje-4-sy" class="target " src="img/personajes/22.png" alt=""></div>
+           <div ><img id="personaje-5-sy" class="target " src="img/personajes/3.png" alt=""></div>
+           <div ><img id="personaje-6-sy" class="target " src="img/personajes/13.png" alt=""></div>
+           <div ><img id="personaje-7-sy" class="target " src="img/personajes/20.png" alt=""></div>
+
+   </div>
+</div>
+
+<script>
+    $( ".data-desc" ).scroll();
+</script>
+
+<script>
+   new jBox('Modal', {
+           attach: '#modal-personajes',
+           width: 500,
+           height: 450,
+           title: "<center><h3 id='pers-title' , cursive;'>Personajes que aparecen en esta isla</h3></center",
+           content:
+                   $('#character-data-sy')
+   });
+
+   new jBox('Tooltip', {
+           attach: '#personajes-tool',
+           content: 'PERSONAJES',
+           position: {
+
+                   y: 'bottom'
+           },
+   });
+
+   new jBox('Tooltip', {
+           attach: '#personaje-1-sy',
+           content: '<center>Usopp</center><center>ウソップ</center>',
+           position: {
+                   y: 'bottom'
+           },
+   });
+   new jBox('Tooltip', {
+           attach: '#personaje-2-sy',
+           content: '<center>Kaya</center><center>カヤ</center>',
+           position: {
+                   y: 'bottom'
+           },
+   });
+   new jBox('Tooltip', {
+           attach: '#personaje-3-sy',
+           content: '<center>Merry</center><center>メリー</center>',
+           position: {
+                   y: 'bottom'
+           },
+   });
+   new jBox('Tooltip', {
+           attach: '#personaje-4-sy',
+           content: '<center>Kuro</center><center>キャプテン・クロ</center>',
+           position: {
+                   y: 'bottom'
+           },
+   });
+   new jBox('Tooltip', {
+           attach: '#personaje-5-sy',
+           content: '<center>Monkey D. Luffy</center><center>モンキー・Ｄ・ルフィ</center>',
+           position: {
+                   y: 'bottom'
+           },
+   });
+   new jBox('Tooltip', {
+           attach: '#personaje-6-sy',
+           content: '<center>Roronoa Zoro</center><center>ロロノア・ ゾロ</center>',
+           position: {
+                   y: 'bottom'
+           },
+   });
+   new jBox('Tooltip', {
+           attach: '#personaje-7-sy',
+           content: '<center>Nami</center><center>ナミ</center>',
+           position: {
+                   y: 'bottom'
+           },
+   });
+</script>

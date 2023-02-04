@@ -1,0 +1,12 @@
+.divisor{
+    padding: 3%;
+    border: 1px solid black;
+    } 
+
+
+.contenedor{
+    padding: 10px 10px 10px 100px;
+    display: flex; 
+    flex-direction: row;
+} 
+   

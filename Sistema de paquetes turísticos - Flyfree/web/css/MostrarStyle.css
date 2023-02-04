@@ -1,0 +1,61 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20/03/2018, 02:41:40 PM
+    Author     : us
+*/
+
+body{
+    background-image:url("../img/flyFree.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+
+
+
+a:visited{
+    text-decoration: background;
+    color: white;
+}
+a:hover{
+    text-decoration: none;
+    color: blue;
+}
+
+table{
+    background-color:  rgba(0,0,0,0.4);
+    border-collapse: collapse;
+    width: 50%;
+}
+
+th, td{
+    text-align: left;
+    padding: 4px;
+    color: white;
+}
+
+tr{
+    border:black 1px solid;
+}
+
+tr:nth-child(odd){
+	
+    background-color:rgba(0,0,250,0.2);;
+}
+	
+th{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    background-color: rgba(0,0,250,0.4);
+    color: white;
+}
+
+.tabla-paquetes{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}

@@ -1,0 +1,3 @@
+1,KFC,Pedro Gomez,34,GERENTE
+2,KFC,prueba,4253344,prueba
+3,Pizza hut,Jorge,4254656,Administrador

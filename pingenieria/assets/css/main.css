@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Fira+Sans&family=Francois+One&family=Lato:wght@300;700&family=Titan+One&display=swap');
+		body, html{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+			font-family: 'Francois One', sans-serif;
+
+
+		}
+		#g2772{
+			margin: 1rem;
+			fill:   rgb(249 250 251);  /* fallback for old browsers */
+
+			
+		}
+		svg{
+			margin: 0;
+			padding: 0;
+			width: 80%;
+			height: auto;
+			
+
+		}
+		#g5124:hover{
+			fill: yellow;
+			cursor: pointer;
+		}
+
+		#g4524:hover{
+			fill: yellow;
+			cursor: pointer;
+		}
+		#g5100:hover{
+			fill: yellow;
+			cursor: pointer;
+		}
+		#g4380:hover{
+			fill: yellow;
+			cursor: pointer;
+		}
+		#g4326:hover{
+			fill: yellow;
+			cursor: pointer;
+		}
+		#g5174:hover{
+			fill: yellow;
+			cursor: pointer;
+		}
+
+		#g5172:hover{
+			fill: yellow;
+			cursor: pointer;
+		}
+
+		#g4650:hover{
+			fill: yellow;
+			cursor: pointer;
+		}
+
+		#g5220:hover{
+			fill: yellow;
+			cursor: pointer;
+		}
+		#g4266:hover{
+			fill: yellow;
+			cursor: pointer;
+		}
+		#g5196:hover{
+			fill: yellow;
+			cursor: pointer;
+		}
+
+		#g4194:hover{
+			fill: yellow;
+			cursor: pointer;
+		}
+
+		#g5316:hover{
+			fill: yellow;
+			cursor: pointer;
+		}
+
+		#g4776:hover{
+			fill: yellow;
+			cursor: pointer;
+		}
+
+		#g4548:hover{
+			fill: yellow;
+			cursor: pointer;
+		}
+
+		#g4722:hover{
+			fill: yellow;
+			cursor: pointer;
+		}
+
+		#g4296:hover{
+			fill: yellow;
+			cursor: pointer;
+		}
+
+		#g4854:hover{
+			fill: yellow;
+			cursor: pointer;
+		}
+
+		#g4974:hover{
+			fill: yellow;
+			cursor: pointer;
+		}
+		#g4140:hover{
+			fill: yellow;
+			cursor: pointer;
+		}
+
+		#g4902:hover{
+			fill: yellow;
+			cursor: pointer;
+		}
+
+		#g4410:hover{
+			fill: yellow;
+			cursor: pointer;
+		}
+
+		#g4218:hover{
+			fill: yellow;
+			cursor: pointer;
+		}
+
+		#g4878:hover{
+			fill: yellow;
+			cursor: pointer;
+		}
+
+		#g5388:hover{
+			fill: yellow;
+			cursor: pointer;
+		}
+
+		#g5442:hover{
+			fill: yellow;
+			cursor: pointer;
+		}
+
+		#g4494:hover{
+			fill: yellow;
+			cursor: pointer;
+		}
+
+		#g4950:hover{
+			fill: yellow;
+			cursor: pointer;
+		}
+
+		#g4464:hover{
+			fill: yellow;
+			cursor: pointer;
+		}
+
+		#g4926:hover{
+			fill: yellow;
+			cursor: pointer;
+		}
+
+		#g4824:hover{
+			fill: yellow;
+			cursor: pointer;
+		}
+
+		#g5496:hover{
+			fill: yellow;
+			cursor: pointer;
+		}
+
+		#g5028:hover{
+			fill: yellow;
+			cursor: pointer;
+		}
+
+		#g5364:hover{
+			fill: yellow;
+			cursor: pointer;
+		}
+
+		#g5466:hover{
+			fill: yellow;
+			cursor: pointer;
+		}
+
+		#g4746:hover{
+			fill: yellow;
+			cursor: pointer;
+		}
+
+		#g4440:hover{
+			fill: yellow;
+			cursor: pointer;
+		}
+
+		#g5268:hover{
+			fill: yellow;
+			cursor: pointer;
+		}
+
+		#g4164:hover{
+			fill: yellow;
+			cursor: pointer;
+		}
+		#g4998:hover{
+			fill: yellow;
+			cursor: pointer;
+		}
+		#g5076:hover{
+			fill: yellow;
+			cursor: pointer;
+		}
+		#plan-container{
+			margin-top: 1rem;
+			padding: 1rem;
+		}
+
+
+		#menu{
+			display: flex;
+			justify-content: center;
+			flex-direction: row;
+		}
+
+		#menu li{
+			margin: 1rem;
+			list-style-type: none;
+		}
+
+		#tools-container{
+			display: flex;
+			width: 100%;
+			height: 20vh;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			margin-bottom: 2rem;
+
+
+		}
+		
+		#tools-container-card{
+			margin: 2rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 120px;
+			height: 50px;
+			border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%  ;
+			border: 2px outset #db9191;
+			box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.41);
+-webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.41);
+-moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.41);
+
+		}
+
+		h3{
+			font-size: 17.5px;
+			padding: 1rem;
+		}
+
+		#tools-container-card:hover{
+			background: #4e54c8;  /* fallback for old browsers */
+			background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);  /* Chrome 10-25, Safari 5.1-6 */
+			background: linear-gradient(to right, #8f94fb, #4e54c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+			color:white;
+			animation:pulse; /* referring directly to the animation's @keyframe declaration */
+			animation-duration: 2s; /* don't forget to set a duration! */
+		}
+
+
+
+		@media only screen and (max-width: 480px) {
+
+
+			.hello{
+				font-size: 13px;
+			}
+			#tools-container-card{
+				width: 65px;
+				height: 50px;
+			}
+
+			h3{
+				font-size: 10px;
+			}
+
+			svg{
+				width: 100%;
+				height: auto;
+					margin-bottom: 8rem;
+			}
+
+			
+		}

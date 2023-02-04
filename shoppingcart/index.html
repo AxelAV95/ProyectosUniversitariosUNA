@@ -1,0 +1,358 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shopping cart</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">.
+</head>
+<body>
+	<!--- NAVBAR---->
+	<div class="fixed-top">
+	  
+	  <nav class="navbar navbar-dark bg-dark">
+	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="cart-btn">
+	    	<span class="nav-icon">
+	    		<i class="fas fa-cart-plus"></i>
+	    	</span>
+	    	<div class="cart-items">0</div>
+	    </div>
+	    
+	  </nav>
+	  <div class="collapse  " id="navbarToggleExternalContent">
+	    <div id="container-ul" class="bg-light p-4">
+	     <ul class="nav navbar-nav " id="menu">
+          <li class="active"><a href="#intro" class="smoothscroll">Inicio</a></li>
+          <!-- <li><a href="#skills" class="smoothscroll">Tecnologías</a></li>
+          <li><a href="#educacion" class="smoothscroll">Educación y experiencia</a></li>
+          <li><a href="#sobremi" class="smoothscroll">Sobre mi</a></li> -->
+        </ul>
+	    </div>
+	  </div>
+
+	</div>	
+	<!--- FIN DEL NAVBAR---->
+
+	<!--- BANNER---->
+	<header class="book-wall">
+		<div class="banner">
+			<h1 class="banner-title">
+				LA MEJOR COLECCIÓN DE LIBROS
+			</h1>
+			<button class="banner-btn btn-primary">Comprar</button>
+		</div>
+	</header>
+
+	<!--- FIN DEL BANNER---->
+
+	<!--- PRODUCTOS---->
+	<section class="productos">
+		<div class="section-title">
+			<h2>Nuestros productos</h2>
+		</div>
+		<div class="productos-center">
+		
+			
+		</div>
+		
+	</section>
+	<!--- FIN PRODUCTOS---->
+
+	<!--- CART---->
+		<div class="cart-overlay">
+			<div class="cart">
+				<span class="close-cart">
+					<i class="fas fa-window-close" style="color: black;"></i>
+				</span>
+				<h2>Tu carrito</h2>
+				<div class="cart-content">
+					<div class="cart-item">
+						
+					</div>
+				</div>
+				<div class="cart-footer">
+					<h3>total: $ <span class="cart-total"></span></h3>
+					<button class="clear-cart banner-btn">Limpiar
+						
+					</button>
+				</div>
+			</div>
+		</div>
+
+		
+	<!--- FIN CART---->
+	<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+	<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/0a040b50ba.js" crossorigin="anonymous"></script>
+	<!-- <script type="text/javascript" src="js/main.js"></script> -->
+    <script>
+
+		const cartBtn = document.querySelector('.cart-btn');
+		const closeBtn = document.querySelector('.close-cart');
+		const clearBtn = document.querySelector('.clear-cart');
+		const cartDOM = document.querySelector('.cart');
+		const cartOverlay = document.querySelector('.cart-overlay');
+		const cartItems = document.querySelector('.cart-items');
+		const cartTotal = document.querySelector('.cart-total');
+		const cartContent = document.querySelector('.cart-content');
+		const productsDOM = document.querySelector('.productos-center');
+		
+		let cart = [];
+		let buttonsDOM = [];
+
+		class Productos{
+	async getProductos(){
+		try{
+			
+			let datosrecibidos;
+			
+			// $.ajax({
+			// 	type: 'post',
+			// 	url: 'obtenerlibros.php',
+			
+			// 	success: async function (response) {
+			// 	// We get the element having id of display_info and put the response inside it
+			// 		datosrecibidos = response;
+					
+			
+			
+			// 	}
+			// });
+			let result = await fetch('myjson.json');
+			let data = await result.json();
+			let productos = data.libros;
+			productos = productos.map(item => {
+				const id = item.id;
+				const nombre = item.nombre
+				const precio = item.precio;
+				const img = item.img;
+				return {id, nombre, precio,img}
+			});
+			return productos;
+
+
+		
+		}catch(error){
+			console.log(error);
+		}
+
+		
+	}
+}
+
+class UI{
+	mostrarLibros(productos){
+		let result = '';
+		productos.forEach(element => {
+			result += `<article class="producto"><div class="img-container"><img src="${element.img}" class="producto-img"><button class="bag-btn" data-id="${element.id}"><i class="fas fa-shopping-cart"></i>Agregar al carrito</button></div><h3>${element.nombre}</h3><h4>${element.precio}</h4></article>`;
+		});
+		productsDOM.innerHTML = result;
+		// var productosid = [];
+		// var d = [...Storage.getCart() ] ;
+		// d.forEach(item => {
+		// 	productosid.push(item.id);
+			
+		// });
+		// alert(productosid);
+		
+	}
+
+	getBagButtons(){
+		const buttons = [... document.querySelectorAll(".bag-btn") ];
+		buttonsDOM = buttons;
+		buttons.forEach(button => {
+			let id = button.dataset.id;
+			let inCart = cart.find(item => item.id === id);
+			if(inCart){
+				button.innerText = "En carrito";
+				button.disabled = true;
+			}else{
+				button.addEventListener('click', (event) => {
+					event.target.innerText = "En carrito";
+					event.target.disabled = true;
+
+					//obtener producto
+					let cartItem = {... Storage.getProduct(id), cantidad:1};
+					//agregar al carrito
+					cart = [... cart, cartItem]; 
+					//guardar al carrito
+					Storage.saveCart(cart);
+					//set cart values
+					this.setCartValues(cart);
+					this.addCartItem(cartItem);
+					this.showCart();
+					//console.log(cartItem);
+				});
+			}
+		});
+	}
+	setCartValues(cart){
+		let tempTotal = 0;
+		let itemsTotal = 0;
+		cart.map(item => {
+			tempTotal += item.precio * item.cantidad;
+			itemsTotal += item.cantidad;
+		});
+
+		cartTotal.innerText = parseFloat(tempTotal.toFixed(2));
+		cartItems.innerText = itemsTotal;
+	
+	}
+
+	addCartItem(item){
+		const div = document.createElement('div');
+		div.classList.add('cart-item');
+		div.innerHTML = `<img src="${item.img}" alt="libro">
+						<div>
+							<h4>${item.nombre}</h4>
+							<h5>${item.precio}</h5>
+							<span class="remove-item" data-id="${item.id}">remove</span>
+						</div>
+						<div>
+							<i class="fas fa-chevron-up" data-id="${item.id}"></i>
+							<p class="item-amount">${item.cantidad}</p>
+							<i class="fas fa-chevron-down" data-id="${item.id}"></i>
+						</div>`;
+		cartContent.appendChild(div);
+		
+	}
+
+	showCart(){
+		cartOverlay.classList.add('transparentBcg');
+		cartDOM.classList.add('showCart');
+	}
+
+	setupAPP(){
+		cart = Storage.getCart();
+		this.setCartValues(cart);
+		this.populate(cart);
+		cartBtn.addEventListener('click', this.showCart);
+		closeBtn.addEventListener('click', this.hideCart);
+	}
+
+	populate(cart){
+		cart.forEach(item => this.addCartItem(item));
+	}
+
+	hideCart(){
+		cartOverlay.classList.remove('transparentBcg');
+		cartDOM.classList.remove('showCart');
+	}
+	cartLogic(){
+		clearBtn.addEventListener('click', () => {
+			this.clearCart();
+		} );
+
+		cartContent.addEventListener('click', event =>{
+			if(event.target.classList.contains("remove-item")){
+				let removeItem = event.target;
+				let id = removeItem.dataset.id;
+				cartContent.removeChild(removeItem.parentElement.parentElement);
+				this.removeItem(id);
+			}
+			else if(event.target.classList.contains("fa-chevron-up")){
+				let addAmount = event.target;
+				let id = addAmount.dataset.id;
+				let tempItem = cart.find(item => item.id === id);
+				tempItem.cantidad = tempItem.cantidad + 1;
+				Storage.saveCart(cart);
+				this.setCartValues(cart);
+				addAmount.nextElementSibling.innerText = tempItem.cantidad;
+			}
+			else if(event.target.classList.contains("fa-chevron-down")){
+				let lowerAmount = event.target;
+				let id = lowerAmount.dataset.id;
+				let tempItem = cart.find(item => item.id === id);
+				tempItem.cantidad = tempItem.cantidad - 1;
+
+				if(tempItem.cantidad > 0){
+					Storage.saveCart(cart);
+					this.setCartValues(cart);
+					lowerAmount.previousElementSibling.innerText = tempItem.cantidad;
+				}else{
+					cartContent.removeChild(lowerAmount.parentElement.parentElement);
+					this.removeItem(id);
+				}
+				
+				
+			}
+
+
+
+		});
+	}
+
+	clearCart(){
+		let cartItems = cart.map(item => item.id);
+		cartItems.forEach(id => this.removeItem(id));
+		while(cartContent.children.length>0){
+			cartContent.removeChild(cartContent.children[0]);
+		}
+		this.hideCart();
+	}
+
+	removeItem(id){
+		cart = cart.filter(item => item.id !== id);
+		this.setCartValues(cart);
+		Storage.saveCart(cart);
+		
+		let button= this.getSingleButton(id);
+		button.innerHTML = `<i class="fas fa-shopping-cart"></i>Agregar al carrito`;
+		button.disabled = false;
+	}
+
+	getSingleButton(id){
+		 return buttonsDOM.find(button => button.dataset.id === id);
+	}
+}
+
+class Storage{
+	static guardarLibros(productos){
+		localStorage.setItem("products", JSON.stringify(productos));
+	}
+	static getProduct(id){
+		let products = JSON.parse(localStorage.getItem('products'));
+		return products.find(product => product.id === id);
+	}
+
+	static saveCart(cart){
+		localStorage.setItem("cart", JSON.stringify(cart));
+	}
+
+	static getCart(){
+		return localStorage.getItem('cart')?JSON.parse(localStorage.getItem('cart')):[];
+	}
+}
+
+document.addEventListener("DOMContentLoaded",()=>{
+	const ui = new UI();
+	const productos = new Productos();
+
+	ui.setupAPP();
+
+	productos.getProductos().then(productos => {
+		ui.mostrarLibros(productos)
+		Storage.guardarLibros(productos);
+	}).then(()=> {
+		ui.getBagButtons();
+		ui.cartLogic();
+	});
+	
+})
+	
+		
+	</script>	
+
+</body>
+</html>

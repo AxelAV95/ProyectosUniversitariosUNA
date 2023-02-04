@@ -1,0 +1,14 @@
+ut = mes
+QA = 4000
+K = 50+0.70*x
+  = 50+0.70*4000
+  = 2850 dolares
+
+a) 4000 galones máximo
+b) Como los pedidos son cada
+2 meses, sería 12/2 = 6, entonces
+se hacen 6 pedidos
+c) 2.17945 meses
+
+e) 2150 dolares
+
