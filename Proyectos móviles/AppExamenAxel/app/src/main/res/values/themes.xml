@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.AppExamenAxel" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="SearchableSpinnerStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@color/light_gray</item>
+    </style>
+
+    <style name="Theme.AppExamenAxel" parent="Base.Theme.AppExamenAxel" />
+</resources>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        >
+
+        <LinearLayout
+
+            android:id="@+id/top_banner"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/top_banner"
+            >
+            <TextView
+                android:id="@+id/titulo_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Cliente"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:gravity="center" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/campo_container_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top_banner"
+            android:orientation="vertical"
+            android:padding="16dp"
+            >
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#5d7bb8"
+                android:text="Nombre:" />
+
+            <EditText
+                android:id="@+id/cliente_campo_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:ems="10"
+                android:textSize="15dp"
+                android:padding="8dp"
+                android:background="@drawable/border_template"
+                android:inputType="text"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/campo_container_telefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+
+            android:layout_below="@id/campo_container_nombre"
+            >
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Teléfono:"
+                android:textColor="#5d7bb8"/>
+
+            <EditText
+                android:id="@+id/cliente_campo_telefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:ems="10"
+                android:textSize="15dp"
+                android:background="@drawable/border_template"
+                android:padding="8dp"
+                android:inputType="number"
+                />
+
+        </LinearLayout>
+
+
+
+        <CheckBox
+            android:id="@+id/cliente_check_activo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/campo_container_telefono"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:textColor="#5d7bb8"
+            android:text="Activo" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cliente_check_activo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="96dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_form_agregar_cliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agregar"
+                android:background="@drawable/blue_gradient"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                />
+
+            <Button
+                android:id="@+id/btn_form_regresar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="Regresar"
+                android:background="@drawable/blue_gradient"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

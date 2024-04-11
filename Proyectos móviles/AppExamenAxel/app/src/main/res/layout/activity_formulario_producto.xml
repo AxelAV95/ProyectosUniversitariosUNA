@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+
+    <RelativeLayout
+        android:id="@+id/contenedor_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:id="@+id/top_banner"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/top_banner"
+            >
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/titulo_form_productos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Producto"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_centerHorizontal="true" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/campo_container_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top_banner"
+            android:orientation="vertical"
+
+            android:padding="16dp"
+            >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre:"
+                android:textColor="#5d7bb8"/>
+
+                <EditText
+                android:id="@+id/producto_campo_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                    android:textSize="15dp"
+                android:inputType="text"
+
+                android:background="@drawable/border_template"
+                android:padding="8dp"
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/campo_container_cantidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_below="@id/campo_container_nombre"
+            >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cantidad:"
+                android:textColor="#5d7bb8"/>
+
+                <EditText
+                android:id="@+id/producto_campo_cantidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10" android:inputType="number"
+                    android:textSize="15dp"
+                android:background="@drawable/border_template"
+                android:padding="8dp"
+                android:layout_centerHorizontal="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/campo_container_detalles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_below="@id/campo_container_cantidad"
+            >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Detalles:"
+                android:textColor="#5d7bb8"/>
+
+            <EditText
+            android:id="@+id/producto_campo_detalles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+                android:textSize="15dp"
+            android:background="@drawable/border_template"
+            android:padding="8dp"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+
+            android:layout_centerHorizontal="true" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_seleccionar_imagen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seleccionar imagen"
+            android:background="@drawable/blue_gradient"
+            android:textAllCaps="false"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/white"
+            android:layout_below="@id/campo_container_detalles"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/producto_imagen"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            app:srcCompat="@drawable/imgbase"
+            android:layout_below="@id/btn_seleccionar_imagen"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/border_template"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/producto_imagen"
+            android:layout_marginTop="2dp">
+        <Button
+            android:id="@+id/btn_form_agregar_producto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agregar"
+            android:background="@drawable/blue_gradient"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:layout_marginRight="4dp"
+            android:layout_below="@id/producto_imagen"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/btn_regresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Regresar"
+            android:background="@drawable/blue_gradient"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:layout_below="@id/producto_imagen"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"
+            android:layout_toEndOf="@id/btn_form_agregar_producto" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+        

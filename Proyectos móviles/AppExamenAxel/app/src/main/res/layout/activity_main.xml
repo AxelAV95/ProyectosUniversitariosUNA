@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#feffff"
+    tools:context=".view.activities.MainActivity">
+
+    <LinearLayout
+        android:layout_marginTop="9dp"
+        android:id="@+id/contenedor_opciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_template"
+            android:padding="8dp">
+                <androidx.cardview.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:padding="16dp">
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/btn_agregar_cliente"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            app:lottie_rawRes="@raw/agregar2"
+                            app:lottie_autoPlay="true"
+                            app:lottie_loop="true"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="2dp"/>
+
+                        <TextView
+                            android:id="@+id/cliente"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#183b8d"
+                            android:textStyle="normal"
+                            android:text="Clientes" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_template"
+            android:padding="8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:padding="16dp">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/btn_agregar_producto"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:lottie_rawRes="@raw/agregar"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="2dp"/>
+
+                    <TextView
+                        android:id="@+id/producto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Producto"
+                        android:textColor="#183b8d"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_template"
+            android:padding="8dp">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:padding="16dp">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/btn_vincular_producto"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:lottie_rawRes="@raw/favorito2"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="2dp"/>
+
+                    <TextView
+                        android:id="@+id/vincular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Vincular"
+                        android:textColor="#183b8d"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </FrameLayout>
+    </LinearLayout>
+    <!--
+      <LinearLayout
+          android:id="@+id/contenedor_botones"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center_horizontal"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="2dp"
+          >
+
+          <Button
+              android:id="@+id/btn_agregar_cliente"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Agregar cliente"
+              android:backgroundTint="#98FF98"
+              android:textColor="@color/black"
+              android:layout_marginRight="20dp"/>
+
+               <Button
+              android:id="@+id/btn_agregar_producto"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:backgroundTint="#98FF98"
+              android:textColor="@color/black"
+              android:text="Agregar producto"
+              android:layout_toRightOf="@id/btn_agregar_cliente" />
+
+
+
+
+    </LinearLayout>
+  -->
+    <!--
+    <LinearLayout
+        android:id="@+id/contenedor_botones_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/contenedor_botones"
+        >
+        <Button
+            android:id="@+id/btn_vincular_producto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vincular producto"
+            android:backgroundTint="#98FF98"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>-->
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_clientes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/contenedor_opciones"
+        android:padding="15dp"
+        />
+    <!--
+    <Button
+        android:id="@+id/btn_ip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cambiar IP"
+        android:layout_below="@id/recycler_clientes"
+        />-->
+
+
+</RelativeLayout>

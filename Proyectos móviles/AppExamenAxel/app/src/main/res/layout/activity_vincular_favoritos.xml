@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:cardElevation="4dp">
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.activities.VincularFavoritosActivity">
+
+        <LinearLayout
+
+            android:id="@+id/top_banner"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/top_banner"
+            >
+            <TextView
+                android:id="@+id/titulo_vincular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vincular favoritos"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/cliente_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top_banner"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cliente:"
+                android:textColor="#5d7bb8"/>
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/spinner_clientes"
+                android:background="@drawable/border_template"
+                android:layout_width="match_parent"
+                android:textSize="15dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/contenedor_favoritos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cliente_container"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/producto_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/producto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Producto:"
+                    android:textColor="#5d7bb8"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                        android:id="@+id/spinner_productos"
+                        android:layout_width="220dp"
+                        android:background="@drawable/border_template"
+                        android:textSize="15dp"
+                        android:layout_height="wrap_content"/>
+                    <Button
+
+                        android:id="@+id/btn_agregar_spi_producto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="55dp"
+                        android:background="@drawable/blue_gradient"
+                        android:textAllCaps="false"
+                        android:layout_toEndOf="@id/producto_container"
+                        android:textColor="@color/white"
+                        android:text="Agregar"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:padding="10dp"
+                android:id="@+id/recycler_vincular_fav"
+                android:layout_width="match_parent"
+                android:layout_height="430dp"
+                android:layout_marginTop="10dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_template"
+                android:layout_below="@id/producto_container" />
+
+            <LinearLayout
+                android:layout_below="@id/recycler_vincular_fav"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_vincular_favorito"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/blue_gradient"
+                    android:textAllCaps="false"
+                    android:layout_marginRight="4dp"
+                    android:textColor="@color/white"
+                    android:text="Vincular" />
+
+                <Button
+                    android:id="@+id/btn_regresar_vinc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/blue_gradient"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:text="Regresar" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
