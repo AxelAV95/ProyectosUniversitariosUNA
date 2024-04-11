@@ -1,0 +1,12 @@
+Marca: s
+Modelo: s
+Color: s
+
+Marca: s
+Modelo: s
+Color: s
+
+Marca: s
+Modelo: s
+Color: s
+
